@@ -72,7 +72,7 @@ function getFilterFromSearchParams(searchParams) {
     const emptyFilter = getDefaultFilter()
     const filterBy = {}
     for (const field in emptyFilter) {
-        filterBy[field] = searchParams.get(field)
+        filterBy[field] = searchParams.get(field) || ''
     }
     return filterBy
 }

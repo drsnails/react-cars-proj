@@ -24,6 +24,7 @@ export function CarIndex() {
     const dispatch = useDispatch()
 
     useEffect(() => {
+        
         onLoadCars(queryFilterBy)
     }, [])
 
